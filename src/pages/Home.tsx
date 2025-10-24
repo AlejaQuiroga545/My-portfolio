@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import aboutImage from "@/assets/about-me.jpg";
 
 const Home = () => {
   return (
@@ -151,6 +152,82 @@ const Home = () => {
             />
           </div>
         </motion.div>
+      </section>
+
+      {/* About Me Section - 50/50 Layout */}
+      <section className="py-24 relative">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="grid md:grid-cols-2 gap-12 items-center"
+            >
+              {/* Image Side */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="relative group"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500" />
+                <div className="relative overflow-hidden rounded-3xl border border-primary/20 backdrop-blur-xl">
+                  <img 
+                    src={aboutImage} 
+                    alt="Sobre mí" 
+                    className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              </motion.div>
+
+              {/* Text Side */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                <div className="backdrop-blur-xl bg-white/60 border border-primary/20 rounded-3xl p-10 hover:bg-white/80 transition-all duration-500">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center">
+                      <Sparkles className="w-6 h-6 text-primary" />
+                    </div>
+                    <h2 className="text-4xl font-display font-bold">
+                      <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Sobre Mí
+                      </span>
+                    </h2>
+                  </div>
+                  <div className="space-y-4 text-muted-foreground mb-8">
+                    <p className="text-lg leading-relaxed">
+                      Soy una desarrolladora creativa que vive en la intersección entre el arte y la tecnología. 
+                      Mi pasión es transformar ideas en experiencias digitales hermosas y funcionales.
+                    </p>
+                    <p className="text-lg leading-relaxed">
+                      Cada proyecto es una oportunidad para combinar diseño elegante con código limpio, 
+                      creando soluciones que no solo se ven increíbles, sino que también resuelven problemas reales.
+                    </p>
+                    <p className="text-lg leading-relaxed">
+                      Cuando no estoy programando, me encontrarás explorando nuevas herramientas de diseño, 
+                      tomando fotografías o disfrutando de una buena taza de café mientras escucho música lofi.
+                    </p>
+                  </div>
+                  <Link to="/sobre-mi">
+                    <Button 
+                      variant="outline"
+                      className="rounded-full px-8"
+                    >
+                      Conoce más sobre mí
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </Link>
+                </div>
+              </motion.div>
+            </motion.div>
+          </div>
+        </div>
       </section>
 
       {/* About Me / Creative Identity */}

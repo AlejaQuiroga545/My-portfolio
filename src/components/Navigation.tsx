@@ -1,12 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Home, Briefcase, Mail } from "lucide-react";
+import { Home, Briefcase, Mail, User } from "lucide-react";
 
 const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
     { path: "/", label: "Inicio", icon: Home },
+    { path: "/sobre-mi", label: "Sobre Mí", icon: User },
     { path: "/proyectos", label: "Proyectos", icon: Briefcase },
     { path: "/contacto", label: "Contacto", icon: Mail },
   ];
