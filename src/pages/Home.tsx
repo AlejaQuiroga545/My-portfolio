@@ -82,29 +82,29 @@ const Home = () => {
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/60 backdrop-blur-xl border border-primary/20 mb-8 shadow-lg"
             >
               <Sparkles className="w-5 h-5 text-primary" />
-              <span className="text-base text-foreground font-medium">Creative Developer & Designer</span>
+              <span className="text-base text-foreground font-medium">Developer and Designer</span>
               <Wand2 className="w-5 h-5 text-secondary" />
             </motion.div>
 
             {/* Main heading */}
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                Where Art
+                Where art
               </span>
               <br />
               <span className="text-foreground/80">meets</span>
               <br />
               <span className="bg-gradient-to-r from-accent via-secondary to-primary bg-clip-text text-transparent">
-                Code
+                code
               </span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-              Creando experiencias digitales hermosas donde el diseño y la programación se fusionan en armonía
+              Creando experiencias digitales donde el diseño y la programación se fusionan en armonía
             </p>
 
             {/* Inspirational quote */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
@@ -113,7 +113,7 @@ const Home = () => {
               <p className="text-lg italic text-foreground/80 font-display">
                 "El código es poesía, el diseño es arte, y juntos creamos magia digital 💜"
               </p>
-            </motion.div>
+            </motion.div> */}
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link to="/proyectos">
@@ -196,14 +196,14 @@ const Home = () => {
                     </div>
                     <h2 className="text-4xl font-display font-bold">
                       <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                        Sobre Mí
+                        Sobre mí
                       </span>
                     </h2>
                   </div>
                   <div className="space-y-4 text-muted-foreground mb-8">
                     <p className="text-lg leading-relaxed">
                       Soy una desarrolladora creativa que vive en la intersección entre el arte y la tecnología. 
-                      Mi pasión es transformar ideas en experiencias digitales hermosas y funcionales.
+                      Mi pasión es transformar ideas en experiencias digitales bonitas y funcionales.
                     </p>
                     <p className="text-lg leading-relaxed">
                       Cada proyecto es una oportunidad para combinar diseño elegante con código limpio, 
@@ -510,7 +510,7 @@ const Home = () => {
           >
             <h2 className="text-5xl md:text-6xl font-display font-bold mb-6">
               <span className="bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">
-                Mi Formación
+                Mi formación
               </span>
             </h2>
             <p className="text-muted-foreground text-xl">
@@ -525,22 +525,22 @@ const Home = () => {
             <div className="space-y-12">
               {[
                 {
-                  title: "Máster en Desarrollo Web Full Stack",
-                  institution: "Tech University",
-                  year: "2022",
-                  desc: "Especialización en arquitecturas modernas y diseño de sistemas",
+                  title: "Bachiller técnica en Programación de Software",
+                  institution: "CPDM",
+                  year: "2021",
+                  desc: "Desarrollo teórico/práctico en HTML, CSS, PHP y Bases de datos (XAMPP)",
                 },
                 {
-                  title: "Bootcamp Diseño UX/UI Avanzado",
+                  title: "Producción Multimedia",
                   institution: "Design Academy",
-                  year: "2021",
+                  year: "2023",
                   desc: "Design thinking, prototipado y sistemas de diseño",
                 },
                 {
-                  title: "Ingeniería en Desarrollo de Software",
-                  institution: "Universidad Nacional",
-                  year: "2018 - 2022",
-                  desc: "Fundamentos de programación y desarrollo de aplicaciones",
+                  title: "Marketing y Negocios digitales",
+                  institution: "Universidad Nacional Abierta y a DIstancia",
+                  year: "2025",
+                  desc: "Fundamentos de mercadeo, contabilidad y marketing mix",
                 },
               ].map((edu, index) => (
                 <motion.div

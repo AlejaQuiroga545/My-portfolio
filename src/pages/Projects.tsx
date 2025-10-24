@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "E-Commerce platform",
     description: "Plataforma completa de comercio electrónico con sistema de pagos integrado y panel de administración",
     tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
     gradient: "from-primary/20 to-accent/20",
   },
   {
     id: 2,
-    title: "Design System",
+    title: "Design system",
     description: "Sistema de diseño escalable con componentes reutilizables y documentación interactiva",
     tags: ["React", "Storybook", "Tailwind", "TypeScript"],
     gradient: "from-accent/20 to-primary/20",
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Portfolio Website",
+    title: "Portfolio website",
     description: "Sitio web de portafolio moderno con animaciones fluidas y diseño responsivo",
     tags: ["React", "Framer Motion", "Tailwind"],
     gradient: "from-accent/20 to-primary/20",
@@ -45,7 +45,7 @@ const Projects = () => {
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Mis Proyectos
+              Mis proyectos
             </span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
