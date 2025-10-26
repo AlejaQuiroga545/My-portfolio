@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["Poppins", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
         display: ["Playfair Display", "serif"],
       },
       colors: {
