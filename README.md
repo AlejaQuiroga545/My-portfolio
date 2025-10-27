@@ -1,73 +1,102 @@
-# Welcome to your Lovable project
+# My Portfolio
 
-## Project info
+A beautiful and creative personal portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
-**URL**: https://lovable.dev/projects/4e9389f5-e767-44ba-985a-b4b9ac807bdf
+## Features
 
-## How can I edit this code?
+- Modern and elegant design with dark neon-purple theme
+- Smooth animations and transitions with Framer Motion
+- Fully responsive design for all devices
+- Interactive components and hover effects
+- Project showcase with detailed views
+- Contact form with validation
+- Clean and minimal folder structure
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Typography**: Poppins
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4e9389f5-e767-44ba-985a-b4b9ac807bdf) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
 
-**Use your preferred IDE**
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd void-shaper-io
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. Install dependencies:
+```bash
+npm install
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Development
 
-Follow these steps:
+Run the development server:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build
 
-**Use GitHub Codespaces**
+Build the project for production:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+Start the production server:
 
-This project is built with:
+```bash
+npm start
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Structure
 
-## How can I deploy this project?
+```
+my-portfolio/
+├── app/
+│   ├── layout.tsx          # Root layout
+│   ├── globals.css         # Global styles
+│   ├── page.tsx           # Home page
+│   ├── projects/
+│   │   ├── page.tsx       # Projects listing
+│   │   └── [id]/page.tsx  # Project detail
+│   └── contact/
+│       └── page.tsx       # Contact page
+├── components/
+│   ├── Header.tsx         # Navigation header
+│   ├── Footer.tsx         # Footer component
+│   ├── Hero.tsx           # Hero section
+│   ├── Timeline.tsx       # Timeline component
+│   ├── FloatingParticles.tsx # Background particles
+│   ├── ProjectCard.tsx    # Project card
+│   └── ContactForm.tsx    # Contact form
+└── README.md
+```
 
-Simply open [Lovable](https://lovable.dev/projects/4e9389f5-e767-44ba-985a-b4b9ac807bdf) and click on Share -> Publish.
+## Customization
 
-## Can I connect a custom domain to my Lovable project?
+### Colors
 
-Yes, you can!
+The theme colors are defined in `tailwind.config.ts`. You can customize the purple, pink, and blue neon colors to match your preferences.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Content
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Update the project information, timeline events, and other content in the respective page components.
+
+### Styling
+
+Modify the styles in `app/globals.css` and component files to adjust the appearance.
+
+## License
+
+This project is licensed under the MIT License.
